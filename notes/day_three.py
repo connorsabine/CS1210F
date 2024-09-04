@@ -4,7 +4,7 @@ intro(3)
 
 # Mod
 # how would i determine if a number is odd or even?
-# Use Modulus to find if their is a remainder when deviding by two
+# Use Modulus to find if their is a remainder when dividing by two
 # if there is a remainder (1), the value of num is odd
 # if there is no remainder (0), the value of num is even
 
