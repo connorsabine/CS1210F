@@ -39,11 +39,19 @@ print(cube(3))  # Output: 27
 
 line_break()
 
-# Functions Made in Class
-def cube(x):
-    return x**3
-
+# Total Function (Made in Class)
 def total(subtotal, taxrate=0.05):
+    """
+    Parameters:
+    subtotal (int or float): The number before tax
+    taxrate (int or float): The tax rate, if left blank will default to 0.05
+    
+    Returns:
+    int or float: The total including taxes.
+    """
     return subtotal * taxrate + subtotal
 
+# Example usage of the total function
 print(total(114))
+print(total(114, 0.05))
+print(total(114, 0.06))
