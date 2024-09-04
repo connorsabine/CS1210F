@@ -3,14 +3,13 @@ import time
 import random
 
 POSSIBLE_CHARACTERS = string.printable
-DELAY_PER_INPUT = 0.005
 
-def scrolling(desired):
+def scrolling(desired, delay=0.005):
     index = 0
     current_string = ""
     while current_string != desired:
         while current_string != desired[:index+1]:
-            time.sleep(DELAY_PER_INPUT)
+            time.sleep(delay)
             char = POSSIBLE_CHARACTERS[random.randrange(0, len(POSSIBLE_CHARACTERS)-1)]
             print(current_string + str(char))
             if str(char) == desired[index]:
